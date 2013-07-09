@@ -1,0 +1,57 @@
+<!doctype html>
+<meta charset='utf-8'>
+<html>
+<head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+        body {
+            min-width: 350px;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        #info {
+            float: left;
+        }
+
+        #info {
+            margin: 10px;
+        }
+
+        #artist {
+            font-weight: bold;
+        }
+
+        #play, #stop {
+            background: no-repeat center center;
+            border: none;
+            width: 64px;
+            height: 64px;
+            float: left;
+            margin: 10px;
+            outline: none;
+        }
+
+        #play {
+            background-image: url("play.png");
+        }
+
+        #stop {
+            background-image: url("stop.png");
+            display: none;
+        }
+    </style>
+
+    <script src="popup.js"></script>
+</head>
+<body>
+<button id="play"></button>
+<button id="stop"></button>
+<div id="info">
+    <div id="artist"></div>
+    <div id="song"></div>
+</div>
+</body>
+</html>
+

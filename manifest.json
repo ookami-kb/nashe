@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "НАШЕ Радио",
+    "description": "Неофициальное расширение для Chrome - On-Line вещание НАШЕго Радио",
+    "version": "0.1",
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon.png"
+    },
+
+    "permissions": ["http://mp3.nashe.ru/", "http://pleer.nashe.ru/", "background", "notifications"],
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+
+    "background": {
+        "page": "background.html"
+    }
+}
