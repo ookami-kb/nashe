@@ -4,7 +4,7 @@ var player;
 
 function getInfo(repeat, callBack) {
     var pageRequest = new XMLHttpRequest();
-    pageRequest.open("GET", "http://pleer.nashe.ru/info/nashe.txt", true);
+    pageRequest.open("GET", "http://radiopleer.com/info/nashe.txt", true);
     pageRequest.onload = function() {
         var obj = JSON.parse(this.responseText);
         var artist = obj.artist || "Исполнитель не указан";
@@ -29,7 +29,7 @@ var callback = function(artist, song) {
             type: "basic",
             title: artist,
             message: song,
-            iconUrl: "icon.png"
+            iconUrl: "icon_notification.png"
         }, function(id) {});
         setTimeout(function() {
             chrome.notifications.clear("nashe", function(wasCleared) {});
